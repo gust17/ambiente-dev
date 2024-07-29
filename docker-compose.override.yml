@@ -1,0 +1,10 @@
+services:
+  laravel:
+    volumes:
+      - ./init.sh:/init.sh:ro # Montar init.sh como somente leitura
+      - ./laravel:/var/www/${LARAVEL_PROJECT_NAME}
+
+  vue:
+    volumes:
+      - ./init.sh:/init.sh:ro # Montar init.sh como somente leitura
+      - ./vue:/app/${VUE_PROJECT_NAME}
