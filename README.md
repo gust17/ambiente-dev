@@ -1,21 +1,25 @@
 # Projeto Laravel e Vue com Docker
 
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+
 Este repositório configura um backend Laravel e um frontend Vue usando Docker. A aplicação Laravel está exposta na porta 8089 e a aplicação Vue está exposta na porta 8088.
 
 ## Instruções de Configuração
 
 ### Pré-requisitos
 
-- Docker
-- Docker Compose
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 ### Passos
 
 1. **Clone o repositório:**
 
     ```sh
-    git clone <url-do-repositorio>
-    cd project-root
+    git clone https://github.com/gust17/ambiente-dev.git
+    cd ambiente-dev
     ```
 
 2. **Garanta que o script `init.sh` tenha permissões de execução:**
