@@ -1,71 +1,71 @@
-# Laravel and Vue Project with Docker
+# Projeto Laravel e Vue com Docker
 
-This repository sets up a Laravel backend and a Vue frontend using Docker. The Laravel application is exposed on port 8089, and the Vue application is exposed on port 8088.
+Este repositório configura um backend Laravel e um frontend Vue usando Docker. A aplicação Laravel está exposta na porta 8089 e a aplicação Vue está exposta na porta 8088.
 
-## Setup Instructions
+## Instruções de Configuração
 
-### Prerequisites
+### Pré-requisitos
 
 - Docker
 - Docker Compose
 
-### Steps
+### Passos
 
-1. **Clone the repository:**
+1. **Clone o repositório:**
 
     ```sh
-    git clone <repository-url>
+    git clone <url-do-repositorio>
     cd project-root
     ```
 
-2. **Ensure the `init.sh` script has execute permissions:**
+2. **Garanta que o script `init.sh` tenha permissões de execução:**
 
     ```sh
     chmod +x init.sh
     ```
 
-3. **Build and start the Docker containers:**
+3. **Construa e inicie os contêineres Docker:**
 
     ```sh
     docker-compose build --no-cache
     docker-compose up
     ```
 
-### Handling Repositories
+### Tratando Repositórios
 
 #### Laravel
 
-- **If you have a Laravel repository:**
+- **Se você tiver um repositório Laravel:**
 
-    1. Set the `LARAVEL_REPO` environment variable to the repository URL.
-    2. Set the `LARAVEL_PROJECT_NAME` environment variable to your project name.
-    3. The `init.sh` script will clone the repository, install dependencies, and set up the environment.
+    1. Defina a variável de ambiente `LARAVEL_REPO` com a URL do repositório.
+    2. Defina a variável de ambiente `LARAVEL_PROJECT_NAME` com o nome do seu projeto.
+    3. O script `init.sh` irá clonar o repositório, instalar as dependências e configurar o ambiente.
 
-- **If you don't have a Laravel repository:**
+- **Se você não tiver um repositório Laravel:**
 
-    1. Set the `LARAVEL_PROJECT_NAME` environment variable to your desired project name.
-    2. The `init.sh` script will create a new Laravel project using Composer.
+    1. Defina a variável de ambiente `LARAVEL_PROJECT_NAME` com o nome desejado para o projeto.
+    2. O script `init.sh` irá criar um novo projeto Laravel usando o Composer.
 
 #### Vue
 
-- **If you have a Vue repository:**
+- **Se você tiver um repositório Vue:**
 
-    1. Set the `VUE_REPO` environment variable to the repository URL.
-    2. Set the `VUE_PROJECT_NAME` environment variable to your project name.
-    3. The `init.sh` script will clone the repository and install dependencies.
+    1. Defina a variável de ambiente `VUE_REPO` com a URL do repositório.
+    2. Defina a variável de ambiente `VUE_PROJECT_NAME` com o nome do seu projeto.
+    3. O script `init.sh` irá clonar o repositório e instalar as dependências.
 
-- **If you don't have a Vue repository:**
+- **Se você não tiver um repositório Vue:**
 
-    1. Set the `VUE_PROJECT_NAME` environment variable to your desired project name.
-    2. The `init.sh` script will create a new Vue project using Vue CLI.
+    1. Defina a variável de ambiente `VUE_PROJECT_NAME` com o nome desejado para o projeto.
+    2. O script `init.sh` irá criar um novo projeto Vue usando o Vue CLI.
 
-### Environment Variables
+### Variáveis de Ambiente
 
-Set the following environment variables in your `.env` file or in your shell:
+Defina as seguintes variáveis de ambiente no seu arquivo `.env` ou no seu shell:
 
 ```sh
-LARAVEL_PROJECT_NAME=your_laravel_project_name
-LARAVEL_REPO=your_laravel_repo_url # Leave empty if you don't have a repository
+LARAVEL_PROJECT_NAME=nome_do_seu_projeto_laravel
+LARAVEL_REPO=url_do_seu_repositorio_laravel # Deixe vazio se você não tiver um repositório
 
-VUE_PROJECT_NAME=your_vue_project_name
-VUE_REPO=your_vue_repo_url # Leave empty if you don't have a repository
+VUE_PROJECT_NAME=nome_do_seu_projeto_vue
+VUE_REPO=url_do_seu_repositorio_vue # Deixe vazio se você não tiver um repositório
