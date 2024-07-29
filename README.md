@@ -150,6 +150,6 @@ Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull requ
 
 ## 📞 Contato
 
-Gustavo - [Seu Email](mailto:seuemail@example.com)
+Gustavo - [gustavo@codegus.com](mailto:gustavo@codegus.com)
 
 Link do Projeto: [https://github.com/gust17/ambiente-dev](https://github.com/gust17/ambiente-dev)
