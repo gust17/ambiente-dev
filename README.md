@@ -24,7 +24,13 @@ Este repositório configura um backend Laravel e um frontend Vue usando Docker. 
     chmod +x init.sh
     ```
 
-3. **Construa e inicie os contêineres Docker:**
+3. **Copie o arquivo `.env.example` para `.env`:**
+
+    ```sh
+    cp .env.example .env
+    ```
+
+4. **Construa e inicie os contêineres Docker:**
 
     ```sh
     docker-compose build --no-cache
